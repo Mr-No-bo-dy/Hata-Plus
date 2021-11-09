@@ -1,0 +1,419 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.top {
+    background-color: #1f1f56;
+}
+
+.flex-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+    padding: 16px 0 15px;
+}
+
+.flex-top li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.top-menu a {
+    color: #b1b1d2;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.top-menu a:hover {
+    color: #fd8300;
+}
+
+.social-network a {
+    display: block;
+    background: url(../img/sprites.png) no-repeat;
+}
+
+a.facebook {
+    width: 10px;
+    height: 19px;
+    background-position: 0 -22px;
+}
+
+a.facebook:hover {
+    background-position: 0 0;
+}
+
+a.twitter {
+    width: 18px;
+    height: 15px;
+    background-position: -13px -22px;
+}
+
+a.twitter:hover {
+    background-position: -13px 0;
+}
+
+a.instagram {
+    width: 19px;
+    height: 19px;
+    background-position: -36px -22px;
+}
+
+a.instagram:hover {
+    background-position: -36px 0;
+}
+
+.contacts-top,
+.contacts-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -7px;
+    padding: 25px 0 26px;
+}
+
+.logo,
+.phones,
+.write,
+.cta,
+.houses figure,
+.aside,
+.bottom-menu {
+    margin: 0 7px;
+    width: 22.5%;
+    min-width: 219px;
+}
+
+.phones,
+.write {
+    padding-left: 48px;
+    box-sizing: border-box;
+}
+
+.contacts-top a {
+    color: #25252c;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.phones a {
+    color: #25252c;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.write a {
+    color: #25252c;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+a.skype,
+.phones a,
+.cta a {
+    text-decoration: none;
+}
+
+.contacts-top .phones {
+    position: relative;
+}
+
+.contacts-top .phones:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 1px;
+    height: 52px;
+    background-color: #e4e4ec;
+}
+
+a.phone-top,
+.write a {
+    position: relative;
+}
+
+a.phone-top:before,
+.write a:before {
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: 1px;
+    background-image: url(../img/sprites.png);
+}
+
+.phone-top:before {
+    width: 16px;
+    height: 17px;
+    background-position: -60px 0;
+}
+
+.email:before {
+    width: 17px;
+    height: 13px;
+    background-position: -80px 0;
+}
+
+.skype:before {
+    width: 18px;
+    height: 19px;
+    background-position: -99px 0;
+}
+
+.cta {
+    text-align: right;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 12px 27px;
+    border: 2px solid #fd8300;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    color: #1f1f56;
+    border-color: #1f1f56;
+    background: #fd8300;
+}
+
+.special {
+    padding: 52px 0 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    background: url(../img/bg-pic.jpg) center/cover;
+}
+
+.uppercase {
+    letter-spacing: 2px;
+    font: 700 3.0rem "Roboto Slab";
+    text-transform: uppercase;
+}
+
+.price {
+    margin: 10px 0;
+    color: #fd8300;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.price b {
+    font-size: 4.0rem;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -7px;
+    padding: 40px 0;
+}
+
+.main {
+    margin: 0 7px;
+    max-width: 713px;
+}
+
+.main h1,
+.main h2 {
+    color: #24242b;
+    font: 700 3.0rem "Roboto Slab";
+}
+
+.description {
+    padding-bottom: 16px;
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    border-bottom: 1px solid #e4e4ec;
+}
+
+.description p {
+    margin: 14px 0;
+}
+
+.description a {
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.description a:hover {
+    text-decoration: none;
+}
+
+.cottages h2 {
+    padding: 24px 0;
+    font-size: 2.4rem;
+}
+
+.houses {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -7px;
+}
+
+.houses a {
+    color: #1f1f56;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-decoration: none;
+}
+
+.houses a:hover {
+    text-decoration: underline;
+}
+
+.houses p {
+    color: #9999a6;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.aside h3 {
+    padding: 11px 15px;
+    color: #fff;
+    font: 700 1.6rem/1.5em "Roboto Slab";
+    background-color: #1f1f56;
+}
+
+.menu li {
+    background-color: #e4e4ec;
+}
+
+.menu>li+li {
+    border-top: 1px solid #cdcddd;
+}
+
+.menu>li:hover>a {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.menu a {
+    position: relative;
+    display: block;
+    padding: 11px 15px;
+    color: #25252c;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-decoration: none;
+}
+
+.menu>li>a:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+    transform: rotate(45deg);
+    transition: transform .3s ease;
+}
+
+.menu>li:hover>a:after {
+    right: 13px;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    transform: rotate(135deg);
+}
+
+.in-list {
+    display: none;
+}
+
+.menu li:hover .in-list {
+    display: block;
+}
+
+.in-list a {
+    padding-left: 30px;
+    color: #666;
+}
+
+.in-list a:hover {
+    background-color: #cecedd;
+}
+
+.contacts-bottom {
+    align-items: flex-start;
+    padding: 33px 0 23px;
+}
+
+.contacts-bottom .phones,
+.contacts-bottom .write {
+    padding-left: 28px;
+}
+
+.bottom {
+    background-color: #ededf5;
+}
+
+.bottom-menu a {
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    text-decoration: none;
+}
+
+.bottom-menu a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.copyright {
+    padding: 14px;
+    color: #9999a6;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: center;
+    background-color: #dcdce6;
+}
