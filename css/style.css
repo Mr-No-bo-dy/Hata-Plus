@@ -16,16 +16,16 @@
     font-display: swap;
 }
 
+* {
+    margin: 0;
+}
+
 html {
     font-size: 10px;
 }
 
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-* {
-    margin: 0;
 }
 
 ul {
@@ -46,7 +46,7 @@ ul {
     display: flex;
     justify-content: space-between;
     margin: 0 -10px;
-    padding: 16px 0 15px;
+    padding: 16px 0;
 }
 
 .flex-top li {
@@ -57,7 +57,7 @@ ul {
 .top-menu a {
     color: #b1b1d2;
     font-size: 1.4rem;
-    line-height: 2.4rem;
+    line-height: 1.7em;
     letter-spacing: 2px;
     text-decoration: none;
 }
@@ -128,24 +128,20 @@ a.instagram:hover {
     box-sizing: border-box;
 }
 
-.contacts-top a {
+.contacts-top a,
+.contacts-bottom a {
     color: #25252c;
     font-weight: bold;
     font-size: 1.6rem;
-    line-height: 2.4rem;
+    line-height: 1.5em;
 }
 
 .phones a {
-    color: #25252c;
     font-size: 1.8rem;
-    font-weight: bold;
 }
 
 .write a {
-    color: #25252c;
     font-weight: normal;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
 }
 
 a.skype,
@@ -219,11 +215,11 @@ a.phone-top:before,
 }
 
 .special {
-    padding: 52px 0 35px;
+    padding: 44px 0 25px;
     text-align: center;
     color: #fff;
     font-size: 1.4rem;
-    line-height: 2.4rem;
+    line-height: 1.7em;
     background: url(../img/bg-pic.jpg) center/cover;
 }
 
@@ -233,8 +229,12 @@ a.phone-top:before,
     text-transform: uppercase;
 }
 
-.price {
-    margin: 10px 0;
+.special p {
+    margin: 5px 0;
+}
+
+p.price {
+    margin: 15px 0;
     color: #fd8300;
     font-size: 2.4rem;
     font-weight: bold;
@@ -245,7 +245,7 @@ a.phone-top:before,
 }
 
 sup {
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
 .content {
@@ -267,10 +267,10 @@ sup {
 }
 
 .description {
-    padding-bottom: 16px;
+    padding-bottom: 20px;
     color: #666;
     font-size: 1.4rem;
-    line-height: 2.4rem;
+    line-height: 1.7em;
     border-bottom: 1px solid #e4e4ec;
 }
 
@@ -288,7 +288,7 @@ sup {
 }
 
 .cottages h2 {
-    padding: 24px 0;
+    padding: 25px 0;
     font-size: 2.4rem;
 }
 
@@ -302,7 +302,7 @@ sup {
     color: #1f1f56;
     font-weight: bold;
     font-size: 1.4rem;
-    line-height: 2.4rem;
+    line-height: 1.7em;
     text-decoration: none;
 }
 
@@ -313,7 +313,7 @@ sup {
 .houses p {
     color: #9999a6;
     font-size: 1.3rem;
-    line-height: 1.8rem;
+    line-height: 1.4em;
 }
 
 .aside h3 {
@@ -321,6 +321,11 @@ sup {
     color: #fff;
     font: 700 1.6rem/1.5em "Roboto Slab";
     background-color: #1f1f56;
+}
+
+.aside h3,
+.menu li:last-child {
+    border-radius: 3px;
 }
 
 .menu li {
@@ -342,7 +347,7 @@ sup {
     padding: 11px 15px;
     color: #25252c;
     font-size: 1.4rem;
-    line-height: 2.4rem;
+    line-height: 1.7em;
     text-decoration: none;
 }
 
@@ -399,8 +404,9 @@ sup {
 
 .bottom-menu a {
     color: #666;
+    font-weight: normal;
     font-size: 1.4rem;
-    line-height: 2.6rem;
+    line-height: 1.9em;
     text-decoration: none;
 }
 
@@ -413,7 +419,7 @@ sup {
     padding: 14px;
     color: #9999a6;
     font-size: 1.3rem;
-    line-height: 1.8rem;
+    line-height: 1.4em;
     text-align: center;
     background-color: #dcdce6;
 }
