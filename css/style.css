@@ -298,7 +298,11 @@ sup {
     margin: 0 -7px;
 }
 
-.houses a {
+.houses figure {
+    position: relative;
+}
+
+.houses h4 {
     color: #1f1f56;
     font-weight: bold;
     font-size: 1.4rem;
@@ -306,7 +310,15 @@ sup {
     text-decoration: none;
 }
 
-.houses a:hover {
+.houses a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.houses a:hover~h4 {
     text-decoration: underline;
 }
 
