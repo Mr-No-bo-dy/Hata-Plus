@@ -260,7 +260,7 @@ sup {
     max-width: 713px;
 }
 
-.main h1,
+.main h1.one,
 .main h2 {
     color: #24242b;
     font: 700 3.0rem "Roboto Slab";
