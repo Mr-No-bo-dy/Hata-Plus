@@ -38,18 +38,22 @@ ul {
     max-width: 960px;
 }
 
-.top {
+.top-bg {
     background-color: #1f1f56;
 }
 
-.flex-top {
+.flex-between {
     display: flex;
     justify-content: space-between;
+    margin: 0 -7px;
+}
+
+.top {
     margin: 0 -10px;
     padding: 16px 0;
 }
 
-.flex-top li {
+.top li {
     display: inline-block;
     margin: 0 10px;
 }
@@ -101,22 +105,12 @@ a.instagram:hover {
     background-position: -36px 0;
 }
 
-.contacts-top,
-.contacts-bottom {
-    display: flex;
-    justify-content: space-between;
+.contacts-top {
     align-items: center;
-    margin: 0 -7px;
     padding: 25px 0 26px;
 }
 
-.logo,
-.phones,
-.write,
-.cta,
-.houses figure,
-.aside,
-.bottom-menu {
+.column {
     margin: 0 7px;
     width: 22.5%;
     min-width: 219px;
@@ -233,14 +227,14 @@ a.phone-top:before,
     margin: 5px 0;
 }
 
-p.price {
+p.number {
     margin: 15px 0;
     color: #fd8300;
     font-size: 2.4rem;
     font-weight: bold;
 }
 
-.price b {
+.number b {
     font-size: 4.0rem;
 }
 
@@ -249,24 +243,28 @@ sup {
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 -7px;
     padding: 40px 0;
 }
 
-.main {
+.main-one {
     margin: 0 7px;
     max-width: 713px;
 }
 
-.main h1.one,
-.main h2 {
+.main {
+    margin: 0 7px;
+    width: 960px;
+}
+
+.main-one h1.one,
+.main h1,
+.main-one h2 {
     color: #24242b;
     font: 700 3.0rem "Roboto Slab";
 }
 
-.description {
+.description,
+.price {
     padding-bottom: 20px;
     color: #666;
     font-size: 1.4rem;
@@ -278,24 +276,94 @@ sup {
     margin: 14px 0;
 }
 
-.description a {
+.description a,
+.price a {
     color: #fd8300;
     font-weight: bold;
 }
 
-.description a:hover {
+.description a:hover,
+.price a:hover {
     text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    color: #fff;
+    background-color: #1f1f56;
+}
+
+th:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 3px 0 0;
+}
+
+.col-name {
+    min-width: 290px;
+}
+
+.col-sqr {
+    min-width: 200px;
+}
+
+.col-rooms {
+    min-width: 190px;
+}
+
+.col-gar {
+    min-width: 70px;
+}
+
+.col-price {
+    min-width: 90px;
+}
+
+tbody {
+    background-color: #e4e4ec;
+
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid #cdcddd;
+}
+
+tr:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:last-child>td:first-child {
+    border-radius: 0 0 0 3px;
+}
+
+tr:last-child>td:last-child {
+    border-radius: 0 0 3px 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.time {
+    font-size: 1.3rem;
+    line-height: 1.6em;
 }
 
 .cottages h2 {
     padding: 25px 0;
     font-size: 2.4rem;
-}
-
-.houses {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 -7px;
 }
 
 .houses figure {
@@ -332,12 +400,8 @@ sup {
     padding: 11px 15px;
     color: #fff;
     font: 700 1.6rem/1.5em "Roboto Slab";
+    border-radius: 3px 3px 0 0;
     background-color: #1f1f56;
-}
-
-.aside h3,
-.menu li:last-child {
-    border-radius: 3px;
 }
 
 .menu li {
@@ -351,6 +415,14 @@ sup {
 .menu>li:hover>a {
     color: #fff;
     background-color: #fd8300;
+}
+
+.menu li:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
+.menu>li:last-child:hover>a {
+    border-radius: 0 0 3px 3px;
 }
 
 .menu a {
