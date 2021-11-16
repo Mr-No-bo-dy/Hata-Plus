@@ -363,7 +363,8 @@ tr:last-child>td:last-child {
     border-radius: 0 0 3px 0;
 }
 
-.text-right {
+th:last-child,
+td:last-child {
     text-align: right;
 }
 
