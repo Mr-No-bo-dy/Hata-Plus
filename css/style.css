@@ -257,10 +257,15 @@ sup {
 }
 
 .main-one h1.one,
-.main h1,
-.main-one h2 {
+.cottages h2 {
     color: #24242b;
     font: 700 3.0rem "Roboto Slab";
+}
+
+.main h1 {
+    padding-bottom: 15px;
+    color: #24242b;
+    font: 700 2.4rem "Roboto Slab";
 }
 
 .description,
@@ -276,6 +281,10 @@ sup {
     margin: 14px 0;
 }
 
+.more {
+    padding: 10px 0;
+}
+
 .description a,
 .price a {
     color: #fd8300;
@@ -288,11 +297,13 @@ sup {
 }
 
 table {
+    margin: 20px 0;
+    width: 100%;
     border-collapse: collapse;
 }
 
 thead th {
-    padding: 12px;
+    padding: 12px 20px;
     text-align: left;
     color: #fff;
     background-color: #1f1f56;
@@ -307,23 +318,23 @@ th:last-child {
 }
 
 .col-name {
-    min-width: 290px;
+    width: 33%;
 }
 
 .col-sqr {
-    min-width: 200px;
+    width: 23%;
 }
 
 .col-rooms {
-    min-width: 190px;
+    width: 22%;
 }
 
 .col-gar {
-    min-width: 70px;
+    width: 10%;
 }
 
 .col-price {
-    min-width: 90px;
+    width: 12%;
 }
 
 tbody {
@@ -341,7 +352,7 @@ tr:hover {
 }
 
 td {
-    padding: 10px;
+    padding: 9px 20px;
 }
 
 tr:last-child>td:first-child {
