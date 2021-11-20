@@ -27,7 +27,10 @@ html {
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     cursor: url(../img/dark-cursor.cur), default;
-    /* cursor: url(../img/dark-cursor-link.cur), pointer; */
+}
+
+a:hover {
+    cursor: url(../img/dark-cursor-link.cur), auto;
 }
 
 ul {
@@ -113,7 +116,7 @@ a.instagram:hover {
 }
 
 header {
-    box-shadow: 0 4px 5px rgba(243,243,243,1);
+    box-shadow: 0 4px 5px rgba(243, 243, 243, 1);
 }
 
 .column {
