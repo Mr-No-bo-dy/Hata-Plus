@@ -26,6 +26,8 @@ html {
 
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    cursor: url(../img/dark-cursor.cur), default;
+    /* cursor: url(../img/dark-cursor-link.cur), pointer; */
 }
 
 ul {
@@ -108,6 +110,10 @@ a.instagram:hover {
 .contacts-top {
     align-items: center;
     padding: 25px 0 26px;
+}
+
+header {
+    box-shadow: 0 4px 5px rgba(243,243,243,1);
 }
 
 .column {
@@ -199,13 +205,18 @@ a.phone-top:before,
     padding: 12px 27px;
     border: 2px solid #fd8300;
     border-radius: 25px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
+    box-shadow: inset 4px 4px 8px rgba(240, 120, 60, 0.4),
+        inset -4px -4px 8px rgba(60, 30, 200, 0.4);
 }
 
 .cta a:hover {
     color: #1f1f56;
     border-color: #1f1f56;
     background: #fd8300;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4),
+        inset 4px 4px 8px rgba(240, 120, 60, 0.4),
+        inset -4px -4px 8px rgba(60, 30, 200, 0.4);
 }
 
 .special {
