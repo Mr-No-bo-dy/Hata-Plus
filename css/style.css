@@ -123,7 +123,8 @@ header {
 }
 
 .contacts-top a,
-.contacts-bottom a {
+.contacts-bottom a,
+.contacts a {
     color: #25252c;
     font-weight: bold;
     font-size: 1.6rem;
@@ -212,6 +213,69 @@ a.phone-top:before,
         inset 4px 4px 8px rgba(240, 120, 60, 0.4),
         inset -4px -4px 8px rgba(60, 30, 200, 0.4);
 }
+
+.p3-column2 {
+    max-width: 465px;
+}
+
+.page3 h2 {
+    color: #24242b;
+    font: 700 1.4rem "Roboto Slab";
+    line-height: 1.7em;
+}
+
+.page3 p {
+    color: #666;
+    font: 400 1.4rem "Arial";
+    line-height: 1.5em;
+}
+
+.page3 .phones {
+    padding: 0;
+}
+
+form p {
+    margin: 10px;
+}
+
+input,
+textarea {
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #c5c5d4;
+    border-radius: 3px;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.page3 b {
+    display: inline-block;
+    max-width: 141px;
+}
+
+[type=submit] {
+    padding: 11px 15px;
+    color: #fff;
+    background-color: #fd8300;
+    border-radius: 21px;
+}
+
+label {
+    display: inline-block;
+}
+
+::placeholder {
+    color: #9999a6;
+    font-size: 13px;
+    font-family: "Arial";
+    font-style: italic;
+    line-height: 21px;
+}
+
 
 .special {
     padding: 44px 0 25px;
