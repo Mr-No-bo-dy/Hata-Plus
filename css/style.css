@@ -541,6 +541,9 @@ p.account {
 .p3-column2 {
     margin: 0 14px;
     width: 465px;
+}
+
+.map {
     height: 300px;
 }
 
@@ -563,7 +566,8 @@ form p {
     min-width: 228px;
 }
 
-input,
+[type="text"],
+[type="tel"],
 textarea {
     padding: 10px 15px;
     width: 100%;
@@ -587,7 +591,8 @@ textarea {
     line-height: 21px;
 }
 
-input:hover,
+[type="text"]:hover,
+[type="tel"]:hover,
 textarea:hover {
     border: 1px solid #24242b;
 }
@@ -604,6 +609,7 @@ textarea:hover {
     line-height: 1.7em;
     background-color: #fd8300;
     border-radius: 21px;
+    border: none;
 }
 
 [type=submit]:hover {
