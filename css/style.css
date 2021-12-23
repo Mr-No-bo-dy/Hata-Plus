@@ -209,8 +209,8 @@ a.phone-top:before,
     border: 2px solid #fd8300;
     border-radius: 25px;
     transition: background-color 0.5s ease;
-    box-shadow: inset 4px 4px 8px rgba(240, 120, 60, 0.4),
-        inset -4px -4px 8px rgba(60, 30, 200, 0.4);
+    /* box-shadow: inset 4px 4px 8px rgba(240, 120, 60, 0.4),
+        inset -4px -4px 8px rgba(60, 30, 200, 0.4); */
 }
 
 .cta a:hover {
@@ -597,13 +597,8 @@ textarea:hover {
     border: 1px solid #24242b;
 }
 
-.page3 b {
-    display: inline-block;
-    min-width: 141px;
-}
-
 [type=submit] {
-    padding: 7px 15px;
+    padding: 9px 30px;
     color: #fff;
     font: 700 1.4rem Arial;
     line-height: 1.7em;
@@ -636,19 +631,15 @@ textarea:hover {
 .check+label:before {
     top: 0;
     left: 0;
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     border: 1px solid #c5c5d4;
     border-radius: 3px;
 }
 
-.check:checked+label:before {
-    border-color: #000;
-}
-
 .check:checked+label:after {
-    top: 5px;
-    left: 5px;
+    top: 4px;
+    left: 4px;
     width: 7px;
     height: 4px;
     border-left: 2px solid #1f1f56;
