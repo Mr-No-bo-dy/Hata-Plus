@@ -53,17 +53,18 @@ ul {
     display: none;
 } */
 
-.hamburger{
+.hamburger {
     position: relative;
     overflow: hidden;
     padding: 10px;
     width: 20px;
     height: 20px;
     cursor: pointer;
-  }
-  .hamburger span,
-  .hamburger span:before,
-  .hamburger span:after{
+}
+
+.hamburger span,
+.hamburger span:before,
+.hamburger span:after {
     content: "";
     position: absolute;
     width: 50px;
@@ -72,48 +73,55 @@ ul {
     border-radius: 5px;
     top: 50%;
     transition: box-shadow .25s ease-in-out;
-  }
-  .hamburger span:before{
+}
+
+.hamburger span:before {
     top: 15px;
-  }
-  .hamburger span:after{
+}
+
+.hamburger span:after {
     top: -15px;
-  }
-  .hamburger:hover span,
-  .hamburger:hover span:before,
-  .hamburger:hover span:after{
+}
+
+.hamburger:hover span,
+.hamburger:hover span:before,
+.hamburger:hover span:after {
     background-color: #444;
-  }
-  .hamburger:hover span{
+}
+
+.hamburger:hover span {
     animation: fade .1s linear .6s forwards;
-      box-shadow: 0 0 5px 2px rgba(0,255,0,0.7);
-  }
-  .hamburger:hover span:before{
+    box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.7);
+}
+
+.hamburger:hover span:before {
     animation: left .5s ease-in forwards;
-      box-shadow: 0 0 5px 2px rgba(255,0,0,0.7);
-  }
-  .hamburger:hover span:after{
+    box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.7);
+}
+
+.hamburger:hover span:after {
     animation: right .7s ease-in forwards;
-      box-shadow: 0 0 5px 2px rgba(0,0,255,0.7);
-  }
-  
+    box-shadow: 0 0 5px 2px rgba(0, 0, 255, 0.7);
+}
+
 .flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 10px;
 }
 
 .flex-between {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    column-gap: 14px;
     row-gap: 10px;
 }
 
 .page1.flex-between {
     flex-direction: column-reverse;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .top {
@@ -186,12 +194,13 @@ header {
     box-shadow: 0 4px 5px rgba(243, 243, 243, 1);
 }
 
-.m0--7 {
+/* .m0--7 {
     margin: 0 -7px;
-}
+} */
 
 .column {
-    margin: 0 7px;
+    /* margin: 0 7px; */
+    margin: 0 auto;
     width: 22.5%;
     min-width: 219px;
 }
@@ -334,7 +343,7 @@ sup {
 }
 
 .main {
-    margin: 0 7px;
+    /* margin: 0 7px; */
     width: 100%;
 }
 
@@ -516,8 +525,10 @@ h1 {
     line-height: 1.4em;
 }
 
-.aside {
+.menu {
     width: 100%;
+    position: sticky;
+    top: 20px;
 }
 
 .aside h3 {
@@ -528,10 +539,6 @@ h1 {
     background-color: #1f1f56;
 }
 
-.aside nav {
-    position: sticky;
-    top: 20px;
-}
 
 .menu li {
     background-color: #e4e4ec;
@@ -684,6 +691,7 @@ iframe {
 
 table.inputs {
     width: 100%;
+    border-collapse: separate;
     border-spacing: 10px;
 }
 
@@ -815,9 +823,10 @@ hr {
     background-color: #dcdce6;
 }
 
-@media screen and (min-width: 452px) {
+@media screen and (min-width: 496px) {
     .flex-between {
         row-gap: 20px;
+        column-gap: 28px;
     }
 
     .client {
@@ -829,11 +838,11 @@ hr {
     }
 }
 
-@media screen and (min-width: 607px) {
+@media screen and (min-width: 629px) {
     .hamburger {
         display: none;
     }
-    
+
     .top-menu {
         display: block;
     }
@@ -852,20 +861,19 @@ hr {
     }
 }
 
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 743px) {
+    html {
+        font-size: 10px;
+    }
+
     .page1.flex-between {
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: stretch;
     }
-    
-    .aside {
-        width: 22.5%;
-    }
-    
+
     .contacts-top ul,
     .contacts-bottom ul,
-    /* .write p, */
     .phones,
     .write {
         text-align: left;
@@ -874,13 +882,13 @@ hr {
     .cta {
         text-align: center;
     }
+
+    .menu {
+        width: 219px;
+    }
 }
 
-@media screen and (min-width: 918px) {
-    html {
-        font-size: 10px;
-    }
-
+@media screen and (min-width: 990px) {
     .contacts-top .phones:after {
         display: block;
     }
@@ -891,10 +899,9 @@ hr {
 
     .flex-between {
         justify-content: space-between;
-        flex-wrap: nowrap;
     }
 
-    .cottages,
+    .cottages h2,
     .page3 h1 {
         text-align: left;
     }
