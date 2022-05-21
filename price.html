@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
     <title>Хата Плюс - Ціни на Оренду Наших Котеджів</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +14,10 @@
     <header>
         <div class="top-bg">
             <div class="wrapper">
-                <nav class="flex-between top">
+                <nav class="top flex-between">
+                    <div class="hamburger">
+                        <span></span>
+                    </div>
                     <ul class="top-menu">
                         <li><a href="index.html">Головна</a></li>
                         <li><a href="#">Про компанію</a></li>
@@ -30,7 +34,7 @@
             </div>
         </div>
         <div class="wrapper">
-            <div class="flex-between m0--7 contacts-top">
+            <div class="contacts-top flex-between m0--7">
                 <div class="column logo"><a href="index.html"><img src="img/logo.png" alt="Логотип Хата Плюс"></a></div>
                 <div class="column phones">
                     <p><a class="phone-top" href="tel:+380971002525">+38(097) 100-25-25</a></p>
@@ -46,81 +50,84 @@
         </div>
     </header>
     <div class="wrapper">
-        <div class="flex-between m0--7 content">
+        <div class="content flex-between m0--7">
             <main class="main">
-                <section class="price">
+                <section class="prices">
                     <h1>Ціни на послуги тимчасового проживання</h1>
                     <p>Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом, холодильником,
                         Wi-Fi-зоною.</p>
                     <p>Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та
                         категорії обраного номера.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="col-name">Назва котеджу</th>
-                                <th class="col-sqr">Загальна площа м.кв.</th>
-                                <th class="col-rooms">Кількість кімнат</th>
-                                <th class="col-gar">Гараж</th>
-                                <th class="col-price">Ціна</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Hamilton Paradise</td>
-                                <td>392</td>
-                                <td>5</td>
-                                <td>2</td>
-                                <td>45 000 $</td>
-                            </tr>
-                            <tr>
-                                <td>Montreal Hourse House</td>
-                                <td>295</td>
-                                <td>3</td>
-                                <td>1</td>
-                                <td>29 750 $</td>
-                            </tr>
-                            <tr>
-                                <td>Edmenton</td>
-                                <td>338</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>53 200 $</td>
-                            </tr>
-                            <tr>
-                                <td>Calgary Skyliner</td>
-                                <td>249</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>31 000 $</td>
-                            </tr>
-                            <tr>
-                                <td>Quebec Enterprices</td>
-                                <td>392</td>
-                                <td>4</td>
-                                <td>2</td>
-                                <td>110 000 $</td>
-                            </tr>
-                            <tr>
-                                <td>Alberta Maria</td>
-                                <td>349</td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>67 500 $</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-wrap">
+                        <table class="price">
+                            <thead>
+                                <tr>
+                                    <th class="col-name">Назва котеджу</th>
+                                    <th class="col-sqr">Загальна площа м.кв.</th>
+                                    <th class="col-rooms">Кількість кімнат</th>
+                                    <th class="col-gar">Гараж</th>
+                                    <th class="col-price">Ціна</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hamilton Paradise</td>
+                                    <td>392</td>
+                                    <td>5</td>
+                                    <td>2</td>
+                                    <td>45 000 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Montreal Hourse House</td>
+                                    <td>295</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>29 750 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Edmenton</td>
+                                    <td>338</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>53 200 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Calgary Skyliner</td>
+                                    <td>249</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>31 000 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Quebec Enterprices</td>
+                                    <td>392</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>110 000 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Alberta Maria</td>
+                                    <td>349</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>67 500 $</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <p class="time">Час заселення з 14-00, виїзд до 12-00.</p>
                     <p class="time">Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
                     <p class="more"><a href="#">Ознайомитись з правилами проживання</a></p>
                 </section>
                 <section class="cottages">
                     <h2>Популярні проекти</h2>
-                    <div class="flex-between m0--7 houses">
+                    <div class="houses flex-between m0--7">
                         <figure class="column">
                             <figcaption>
                                 <a href="#"></a>
                                 <picture>
-                                    <source srcset="img/edmonton-pic.webp 1x, img/edmonton-pic@2x.webp 2x" type="image/webp">
+                                    <source srcset="img/edmonton-pic.webp 1x, img/edmonton-pic@2x.webp 2x"
+                                        type="image/webp">
                                     <img src="img/edmonton-pic.jpg" alt="проєкт в Едмонтоні">
                                 </picture>
                                 <h4>EDMONTON (338 м<sup>2</sup>)</h4>
@@ -133,7 +140,8 @@
                             <figcaption>
                                 <a href="#"></a>
                                 <picture>
-                                    <source srcset="img/montreal-pic.webp 1x, img/montreal-pic@2x.webp 2x" type="image/webp">
+                                    <source srcset="img/montreal-pic.webp 1x, img/montreal-pic@2x.webp 2x"
+                                        type="image/webp">
                                     <img src="img/montreal-pic.jpg" alt="проєкт в Монреалі">
                                 </picture>
                                 <h4>MONTREAL (332 м<sup>2</sup>)</h4>
@@ -146,7 +154,8 @@
                             <figcaption>
                                 <a href="#"></a>
                                 <picture>
-                                    <source srcset="img/calgary-pic.webp 1x, img/calgary-pic@2x.webp 2x" type="image/webp">
+                                    <source srcset="img/calgary-pic.webp 1x, img/calgary-pic@2x.webp 2x"
+                                        type="image/webp">
                                     <img src="img/calgary-pic.jpg" alt="проєкт в Калгарі">
                                 </picture>
                                 <h4>CALGARY (294 м<sup>2</sup>)</h4>
@@ -159,7 +168,8 @@
                             <figcaption>
                                 <a href="#"></a>
                                 <picture>
-                                    <source srcset="img/richmond-pic.webp 1x, img/richmond-pic@2x.webp 2x" type="image/webp">
+                                    <source srcset="img/richmond-pic.webp 1x, img/richmond-pic@2x.webp 2x"
+                                        type="image/webp">
                                     <img src="img/richmond-pic.jpg" alt="проєкт в Річмонді">
                                 </picture>
                                 <h4>RICHMOND (324 м<sup>2</sup>)</h4>
@@ -176,7 +186,7 @@
     <footer class="footer">
         <div class="bottom">
             <div class="wrapper">
-                <div class="flex-between m0--7 contacts-bottom">
+                <div class="contacts-bottom flex-between m0--7">
                     <nav>
                         <ul class="column bottom-menu">
                             <li><a href="price.html">Будинки</a></li>

@@ -12,7 +12,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 9px;
 }
 
 body {
@@ -30,26 +30,90 @@ ul {
     padding: 0;
 }
 
+.contacts-top ul,
+.contacts-bottom ul {
+    text-align: center;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 960px;
+    padding: 0 15px;
 }
 
 .top-bg {
     background-color: #1f1f56;
 }
 
+.top-menu {
+    display: none;
+}
+
+/* .hamburger {
+    display: none;
+} */
+
+.hamburger{
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .hamburger span,
+  .hamburger span:before,
+  .hamburger span:after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 7px;
+    background-color: #777;
+    border-radius: 5px;
+    top: 50%;
+    transition: box-shadow .25s ease-in-out;
+  }
+  .hamburger span:before{
+    top: 15px;
+  }
+  .hamburger span:after{
+    top: -15px;
+  }
+  .hamburger:hover span,
+  .hamburger:hover span:before,
+  .hamburger:hover span:after{
+    background-color: #444;
+  }
+  .hamburger:hover span{
+    animation: fade .1s linear .6s forwards;
+      box-shadow: 0 0 5px 2px rgba(0,255,0,0.7);
+  }
+  .hamburger:hover span:before{
+    animation: left .5s ease-in forwards;
+      box-shadow: 0 0 5px 2px rgba(255,0,0,0.7);
+  }
+  .hamburger:hover span:after{
+    animation: right .7s ease-in forwards;
+      box-shadow: 0 0 5px 2px rgba(0,0,255,0.7);
+  }
+  
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
 .flex-between {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 
-.m0--7 {
-    margin: 0 -7px;
-}
-
-.content {
-    padding: 40px 0;
+.page1.flex-between {
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .top {
@@ -60,6 +124,10 @@ ul {
 .top li {
     display: inline-block;
     margin: 0 10px;
+}
+
+.top-menu {
+    text-align: center;
 }
 
 .top-menu a {
@@ -118,6 +186,10 @@ header {
     box-shadow: 0 4px 5px rgba(243, 243, 243, 1);
 }
 
+.m0--7 {
+    margin: 0 -7px;
+}
+
 .column {
     margin: 0 7px;
     width: 22.5%;
@@ -128,6 +200,7 @@ header {
 .write {
     padding-left: 48px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .contacts-top a,
@@ -158,6 +231,7 @@ a.skype,
 }
 
 .contacts-top .phones:after {
+    display: none;
     content: "";
     position: absolute;
     top: 0;
@@ -201,6 +275,7 @@ a.phone-top:before,
 
 .cta {
     text-align: right;
+    /* text-align: center; */
 }
 
 .cta a {
@@ -209,8 +284,6 @@ a.phone-top:before,
     border: 2px solid #fd8300;
     border-radius: 25px;
     transition: background-color 0.5s ease;
-    /* box-shadow: inset 4px 4px 8px rgba(240, 120, 60, 0.4),
-        inset -4px -4px 8px rgba(60, 30, 200, 0.4); */
 }
 
 .cta a:hover {
@@ -256,9 +329,8 @@ sup {
     font-size: 0.7em;
 }
 
-.main-one {
-    margin: 0 7px;
-    max-width: 713px;
+.content {
+    padding: 40px 0;
 }
 
 .main {
@@ -266,20 +338,20 @@ sup {
     width: 100%;
 }
 
-.main-one h1.one,
+.page1 h1,
 .cottages h2 {
     color: #24242b;
     font: 700 3.0rem "Roboto Slab";
 }
 
-.main h1 {
+h1 {
     padding-bottom: 15px;
     color: #24242b;
     font: 700 2.4rem "Roboto Slab";
 }
 
 .description,
-.price {
+.prices {
     padding-bottom: 20px;
     color: #666;
     font-size: 1.4rem;
@@ -291,90 +363,115 @@ sup {
     margin: 14px 0;
 }
 
+.cottages h2 {
+    text-align: center;
+}
+
 .more {
     padding: 10px 0;
 }
 
 .description a,
-.price a {
+.prices a {
     color: #fd8300;
     font-weight: bold;
 }
 
 .description a:hover,
-.price a:hover {
+.prices a:hover {
     text-decoration: none;
 }
 
-table {
+.table-wrap {
+    overflow-x: scroll;
+}
+
+.table-wrap table {
     margin: 20px 0;
-    width: 100%;
+    width: 607px;
     border-collapse: collapse;
 }
 
-thead th {
-    padding: 12px 20px;
+.table-wrap::-webkit-scrollbar {
+    height: 10px;
+    background-color: #e4e4ec;
+    border-radius: 3px;
+}
+
+.table-wrap::-webkit-scrollbar-thumb {
+    background-color: #1f1f56;
+    border-radius: 3px;
+}
+
+.price th {
+    /* padding: 12px 20px; */
+    padding: 12px 10px;
     text-align: left;
     color: #fff;
     background-color: #1f1f56;
 }
 
-th:first-child {
+.price th:first-child {
     border-radius: 3px 0 0 0;
 }
 
-th:last-child {
+.price th:last-child {
     border-radius: 0 3px 0 0;
 }
 
-.col-name {
+.price .col-name {
     width: 33%;
 }
 
-.col-sqr {
-    width: 23%;
+.price .col-sqr {
+    /* width: 23%; */
+    width: 21%;
 }
 
-.col-rooms {
-    width: 22%;
+.price .col-rooms {
+    /* width: 22%; */
+    width: 20%;
 }
 
-.col-gar {
-    width: 10%;
+.price .col-gar {
+    /* width: 10%; */
+    width: 8%;
 }
 
-.col-price {
-    width: 12%;
+.price .col-prices {
+    /* width: 12%; */
+    width: 18%;
 }
 
-tbody {
+.price tbody {
     background-color: #e4e4ec;
 
 }
 
-tbody tr:not(:last-child) {
+.price tbody tr:not(:last-child) {
     border-bottom: 1px solid #cdcddd;
 }
 
-tr:hover {
+.price tr:hover {
     color: #fff;
     background-color: #fd8300;
 }
 
-td {
-    padding: 9px 20px;
+.price td {
+    /* padding: 9px 20px; */
+    padding: 9px 10px;
 }
 
-tr:last-child>td:first-child {
+.price tr:last-child>td:first-child {
     border-radius: 0 0 0 3px;
 }
 
-tr:last-child>td:last-child {
+.price tr:last-child>td:last-child {
     border-radius: 0 0 3px 0;
 }
 
-th:last-child,
-td:last-child {
+.price th:last-child,
+.price td:last-child {
     text-align: right;
 }
 
@@ -419,12 +516,21 @@ td:last-child {
     line-height: 1.4em;
 }
 
+.aside {
+    width: 100%;
+}
+
 .aside h3 {
     padding: 11px 15px;
     color: #fff;
     font: 700 1.6rem/1.5em "Roboto Slab";
     border-radius: 3px 3px 0 0;
     background-color: #1f1f56;
+}
+
+.aside nav {
+    position: sticky;
+    top: 20px;
 }
 
 .menu li {
@@ -495,26 +601,31 @@ td:last-child {
     background-color: #cecedd;
 }
 
-.main.page3 {
+.page3.main {
     margin: 0;
 }
 
-.p3-main1 {
+.p3-main-in {
     padding: 35px 0 30px;
+}
+
+.page3 h1 {
+    text-align: center;
 }
 
 .p3-column {
     margin: 0 7px;
+    text-align: center;
 }
 
 .page3 h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #24242b;
     font: 700 1.4rem "Roboto Slab";
     line-height: 1.7em;
 }
 
-.p3-main1 p {
+.p3-main-in p {
     margin: 3px 0;
 }
 
@@ -535,12 +646,12 @@ p.account {
 
 .p3-main2 {
     margin: 0 -14px;
-    padding: 40px 0;
+    padding: 35px 0;
 }
 
 .p3-column2 {
     margin: 0 14px;
-    width: 465px;
+    width: 100%;
 }
 
 .map {
@@ -557,13 +668,28 @@ iframe {
     margin: 0 -10px;
 }
 
-form p {
+/* form p {
     margin: 10px;
 }
 
+.client-wrap,
 .client {
     margin: 10px 5px 0;
-    min-width: 228px;
+    flex-wrap: nowrap;
+}
+
+.client {
+    width: 100%;
+} */
+
+table.inputs {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+.forma label {
+    font-size: 1.3rem;
+    line-height: 2.1rem;
 }
 
 [type="text"],
@@ -619,6 +745,7 @@ textarea:hover {
 .check+label {
     position: relative;
     margin-left: 25px;
+    padding-top: 12px;
     padding-left: 26px;
 }
 
@@ -629,7 +756,7 @@ textarea:hover {
 }
 
 .check+label:before {
-    top: 0;
+    top: 12px;
     left: 0;
     width: 15px;
     height: 15px;
@@ -638,7 +765,7 @@ textarea:hover {
 }
 
 .check:checked+label:after {
-    top: 4px;
+    top: 16px;
     left: 4px;
     width: 7px;
     height: 4px;
@@ -686,4 +813,103 @@ hr {
     line-height: 1.4em;
     text-align: center;
     background-color: #dcdce6;
+}
+
+@media screen and (min-width: 452px) {
+    .flex-between {
+        row-gap: 20px;
+    }
+
+    .client {
+        min-width: 228px;
+    }
+
+    .flex {
+        justify-content: start;
+    }
+}
+
+@media screen and (min-width: 607px) {
+    .hamburger {
+        display: none;
+    }
+    
+    .top-menu {
+        display: block;
+    }
+
+    .table-wrap {
+        overflow-x: hidden;
+    }
+
+    .table-wrap table {
+        width: 100%;
+    }
+
+    .p3-column,
+    .p3-column .phones {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 715px) {
+    .page1.flex-between {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+    
+    .aside {
+        width: 22.5%;
+    }
+    
+    .contacts-top ul,
+    .contacts-bottom ul,
+    /* .write p, */
+    .phones,
+    .write {
+        text-align: left;
+    }
+
+    .cta {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 918px) {
+    html {
+        font-size: 10px;
+    }
+
+    .contacts-top .phones:after {
+        display: block;
+    }
+
+    .cta {
+        text-align: right;
+    }
+
+    .flex-between {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .cottages,
+    .page3 h1 {
+        text-align: left;
+    }
+
+    .p3-column2 {
+        max-width: 466px;
+    }
+
+    .p1.main {
+        max-width: 713px;
+    }
+
+    .price th,
+    .price td {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

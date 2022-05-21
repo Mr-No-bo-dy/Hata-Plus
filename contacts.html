@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
     <title>Хата Плюс - Наші Контакти, Адреса та Зворотній Зв’язок</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +14,10 @@
     <header>
         <div class="top-bg">
             <div class="wrapper">
-                <nav class="flex-between m0--7 top">
+                <nav class="top flex-between">
+                    <div class="hamburger">
+                        <span></span>
+                    </div>
                     <ul class="top-menu">
                         <li><a href="index.html">Головна</a></li>
                         <li><a href="#">Про компанію</a></li>
@@ -30,7 +34,7 @@
             </div>
         </div>
         <div class="wrapper">
-            <div class="flex-between m0--7 contacts-top">
+            <div class="contacts-top flex-between m0--7">
                 <div class="column logo"><a href="index.html"><img src="img/logo.png" alt="Логотип Хата Плюс"></a></div>
                 <div class="column phones">
                     <p><a class="phone-top" href="tel:+380971002525">+38(097) 100-25-25</a></p>
@@ -46,10 +50,10 @@
         </div>
     </header>
     <div class="wrapper">
-        <main class="main page3">
-            <div class="p3-main1">
+        <main class="page3 main">
+            <div class="p3-main-in">
                 <h1>Контакти</h1>
-                <div class="flex-between m0--7 contacts">
+                <div class="contacts flex-between m0--7">
                     <div class="p3-column">
                         <h2>Наш офіс</h2>
                         <p>с. Війтівці, Хмельницька обл. 27500</p>
@@ -74,7 +78,7 @@
                 </div>
             </div>
             <hr>
-            <div class="flex-between p3-main2">
+            <div class="p3-main2 flex-between">
                 <div class="map p3-column2">
                     <iframe
                         src="https://www.google.com/maps/d/embed?mid=1sc8B2APpVK36B-54FnwxCphIIH9ePicZ&ehbc=2E312F"></iframe>
@@ -82,13 +86,26 @@
                 <form class="feedback p3-column2">
                     <h2>Форма зворотнього зв’язку</h2>
                     <div class="forma">
-                        <div class="flex-between client">
+                        <!-- <div class="client-wrap flex-between">
                             <div class="client"><input type="text" name="name" placeholder="Ваше ім’я"></div>
                             <div class="client"><input type="tel" name="tel" placeholder="Телефон"></div>
                         </div>
                         <p><input type="text" name="theme" placeholder="Тема повідомлення"></p>
-                        <p><textarea name="comment" rows="6" placeholder="Текст"></textarea></p>
-                        <p>
+                        <p><textarea name="comment" rows="6" placeholder="Текст"></textarea></p> -->
+
+                        <table class="inputs">
+                            <tr>
+                                <td><input type="text" name="name" placeholder="Ваше ім’я"></td>
+                                <td><input type="tel" name="tel" placeholder="Телефон"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" name="theme" placeholder="Тема повідомлення"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea name="comment" rows="6" placeholder="Текст"></textarea></td>
+                            </tr>
+                        </table>
+                        <p class="flex">
                             <input type="submit" name="send" value="Відправити">
                             <input id="agree" class="check" type="checkbox" name="agree">
                             <label for="agree">Я бажаю отримувати останні новини</label>
@@ -101,7 +118,7 @@
     <footer class="footer">
         <div class="bottom">
             <div class="wrapper">
-                <div class="flex-between m0--7 contacts-bottom">
+                <div class="contacts-bottom flex-between m0--7">
                     <nav>
                         <ul class="column bottom-menu">
                             <li><a href="price.html">Будинки</a></li>
