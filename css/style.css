@@ -30,15 +30,15 @@ ul {
     padding: 0;
 }
 
-.contacts-top ul,
-.contacts-bottom ul {
-    text-align: center;
-}
-
 .wrapper {
     margin: 0 auto;
     max-width: 960px;
     padding: 0 15px;
+}
+
+.contacts-top ul,
+.contacts-bottom ul {
+    text-align: center;
 }
 
 .top-bg {
@@ -106,7 +106,8 @@ ul {
 
 .flex {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
     flex-wrap: wrap;
     margin: 0 10px;
 }
@@ -115,13 +116,12 @@ ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 14px;
-    row-gap: 10px;
+    row-gap: 20px;
+    column-gap: 28px;
 }
 
 .page1.flex-between {
     flex-direction: column-reverse;
-    /* align-items: center; */
 }
 
 .top {
@@ -194,12 +194,7 @@ header {
     box-shadow: 0 4px 5px rgba(243, 243, 243, 1);
 }
 
-/* .m0--7 {
-    margin: 0 -7px;
-} */
-
 .column {
-    /* margin: 0 7px; */
     margin: 0 auto;
     width: 22.5%;
     min-width: 219px;
@@ -284,7 +279,6 @@ a.phone-top:before,
 
 .cta {
     text-align: right;
-    /* text-align: center; */
 }
 
 .cta a {
@@ -343,7 +337,6 @@ sup {
 }
 
 .main {
-    /* margin: 0 7px; */
     width: 100%;
 }
 
@@ -392,18 +385,18 @@ h1 {
 }
 
 .table-wrap {
+    margin: 20px 0;
     overflow-x: scroll;
 }
 
 .table-wrap table {
-    margin: 20px 0;
     width: 607px;
     border-collapse: collapse;
 }
 
 .table-wrap::-webkit-scrollbar {
     height: 10px;
-    background-color: #e4e4ec;
+    background-color: #cecedd;
     border-radius: 3px;
 }
 
@@ -433,22 +426,18 @@ h1 {
 }
 
 .price .col-sqr {
-    /* width: 23%; */
     width: 21%;
 }
 
 .price .col-rooms {
-    /* width: 22%; */
     width: 20%;
 }
 
 .price .col-gar {
-    /* width: 10%; */
     width: 8%;
 }
 
 .price .col-prices {
-    /* width: 12%; */
     width: 18%;
 }
 
@@ -467,7 +456,6 @@ h1 {
 }
 
 .price td {
-    /* padding: 9px 20px; */
     padding: 9px 10px;
 }
 
@@ -608,10 +596,6 @@ h1 {
     background-color: #cecedd;
 }
 
-.page3.main {
-    margin: 0;
-}
-
 .p3-main-in {
     padding: 35px 0 30px;
 }
@@ -621,7 +605,7 @@ h1 {
 }
 
 .p3-column {
-    margin: 0 7px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -652,12 +636,10 @@ p.account {
 }
 
 .p3-main2 {
-    margin: 0 -14px;
     padding: 35px 0;
 }
 
 .p3-column2 {
-    margin: 0 14px;
     width: 100%;
 }
 
@@ -674,20 +656,6 @@ iframe {
 .forma {
     margin: 0 -10px;
 }
-
-/* form p {
-    margin: 10px;
-}
-
-.client-wrap,
-.client {
-    margin: 10px 5px 0;
-    flex-wrap: nowrap;
-}
-
-.client {
-    width: 100%;
-} */
 
 table.inputs {
     width: 100%;
@@ -732,6 +700,8 @@ textarea:hover {
 }
 
 [type=submit] {
+    min-width: 140px;
+    max-width: 33%;
     padding: 9px 30px;
     color: #fff;
     font: 700 1.4rem Arial;
@@ -753,8 +723,7 @@ textarea:hover {
 .check+label {
     position: relative;
     margin-left: 25px;
-    padding-top: 12px;
-    padding-left: 26px;
+    padding: 10px 10px 10px 26px;
 }
 
 .check+label:before,
@@ -764,7 +733,7 @@ textarea:hover {
 }
 
 .check+label:before {
-    top: 12px;
+    top: 11px;
     left: 0;
     width: 15px;
     height: 15px;
@@ -773,7 +742,7 @@ textarea:hover {
 }
 
 .check:checked+label:after {
-    top: 16px;
+    top: 15px;
     left: 4px;
     width: 7px;
     height: 4px;
@@ -824,21 +793,18 @@ hr {
 }
 
 @media screen and (min-width: 496px) {
-    .flex-between {
-        row-gap: 20px;
-        column-gap: 28px;
-    }
-
-    .client {
-        min-width: 228px;
+    .p3-column,
+    .p3-column .phones {
+        text-align: left;
     }
 
     .flex {
+        flex-direction: row;
         justify-content: start;
     }
 }
 
-@media screen and (min-width: 629px) {
+@media screen and (min-width: 634px) {
     .hamburger {
         display: none;
     }
@@ -853,11 +819,6 @@ hr {
 
     .table-wrap table {
         width: 100%;
-    }
-
-    .p3-column,
-    .p3-column .phones {
-        text-align: left;
     }
 }
 
@@ -901,13 +862,17 @@ hr {
         justify-content: space-between;
     }
 
+    .p3-main2.flex-between {
+        flex-wrap: nowrap;
+    }
+
     .cottages h2,
     .page3 h1 {
         text-align: left;
     }
 
-    .p3-column2 {
-        max-width: 466px;
+    .p3-column {
+        margin: 0;
     }
 
     .p1.main {
