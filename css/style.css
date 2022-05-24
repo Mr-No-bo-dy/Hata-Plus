@@ -20,6 +20,7 @@ body {
     cursor: url(../img/cursor.cur), default;
 }
 
+.hamburger,
 a:hover,
 [type="submit"] {
     cursor: url(../img/cursor-pointer.cur), auto;
@@ -49,17 +50,12 @@ ul {
     display: none;
 }
 
-/* .hamburger {
-    display: none;
-} */
-
 .hamburger {
     position: relative;
-    overflow: hidden;
-    padding: 10px;
+    margin: 0 10px;
+    padding-right: 20px;
     width: 20px;
-    height: 20px;
-    cursor: pointer;
+    height: 25px;
 }
 
 .hamburger span,
@@ -67,41 +63,25 @@ ul {
 .hamburger span:after {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 7px;
-    background-color: #777;
-    border-radius: 5px;
+    width: 40px;
+    height: 2px;
     top: 50%;
-    transition: box-shadow .25s ease-in-out;
+    background-color: #fff;
+    border-radius: 3px;
 }
 
 .hamburger span:before {
-    top: 15px;
+    top: 10px;
 }
 
 .hamburger span:after {
-    top: -15px;
+    top: -10px;
 }
 
 .hamburger:hover span,
 .hamburger:hover span:before,
 .hamburger:hover span:after {
-    background-color: #444;
-}
-
-.hamburger:hover span {
-    animation: fade .1s linear .6s forwards;
-    box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.7);
-}
-
-.hamburger:hover span:before {
-    animation: left .5s ease-in forwards;
-    box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.7);
-}
-
-.hamburger:hover span:after {
-    animation: right .7s ease-in forwards;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 255, 0.7);
+    background-color: #fd8300;
 }
 
 .flex {
