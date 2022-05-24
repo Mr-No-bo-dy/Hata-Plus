@@ -121,7 +121,7 @@ ul {
 .top-menu a {
     color: #b1b1d2;
     font-size: 1.4rem;
-    line-height: 2.4rem;
+    line-height: 1.7em;
     letter-spacing: 2px;
     text-decoration: none;
 }
@@ -193,7 +193,7 @@ header {
     color: #25252c;
     font-weight: bold;
     font-size: 1.6rem;
-    line-height: 2.4rem;
+    line-height: 1.7em;
 }
 
 .phones a {
@@ -283,7 +283,7 @@ a.phone-top:before,
     text-align: center;
     color: #fff;
     font-size: 1.4rem;
-    line-height: 2.4rem;
+    line-height: 1.7em;
     background: url(../img/bg-pic.jpg) center/cover;
 }
 
@@ -338,7 +338,7 @@ h1 {
     padding-bottom: 20px;
     color: #666;
     font-size: 1.4rem;
-    line-height: 2.4rem;
+    line-height: 1.7em;
     border-bottom: 1px solid #e4e4ec;
 }
 
@@ -455,7 +455,7 @@ h1 {
 .time,
 .feedback label {
     font-size: 1.3rem;
-    line-height: 2.1rem;
+    line-height: 1.6em;
 }
 
 .cottages h2 {
@@ -467,11 +467,11 @@ h1 {
     position: relative;
 }
 
-.houses h4 {
+.houses h3 {
     color: #1f1f56;
     font-weight: bold;
     font-size: 1.4rem;
-    line-height: 2.4rem;
+    line-height: 1.7em;
     text-decoration: none;
 }
 
@@ -483,14 +483,14 @@ h1 {
     right: 0;
 }
 
-.houses a:hover~h4 {
+.houses a:hover~h3 {
     text-decoration: underline;
 }
 
 .houses p {
     color: #9999a6;
     font-size: 1.3rem;
-    line-height: 1.8rem;
+    line-height: 1.4em;
 }
 
 .menu {
@@ -499,7 +499,8 @@ h1 {
     top: 20px;
 }
 
-.aside h3 {
+.aside p strong {
+    display: block;
     padding: 11px 15px;
     color: #fff;
     font: 700 1.6rem/1.5em "Roboto Slab";
@@ -592,7 +593,7 @@ h1 {
     margin-bottom: 5px;
     color: #24242b;
     font: 700 1.4rem "Roboto Slab";
-    line-height: 2.4rem;
+    line-height: 1.7em;
 }
 
 .p3-main-in p {
@@ -603,7 +604,7 @@ h1 {
 .feedback label {
     color: #666;
     font: 400 1.4rem "Arial";
-    line-height: 2.1rem;
+    line-height: 1.6em;;
 }
 
 .page3 .phones {
@@ -644,7 +645,7 @@ table.inputs {
 
 .forma label {
     font-size: 1.3rem;
-    line-height: 2.1rem;
+    line-height: 1.6em;;
 }
 
 [type="text"],
@@ -666,10 +667,10 @@ textarea {
 
 ::placeholder {
     color: #9999a6;
-    font-size: 13px;
     font-family: "Arial";
     font-style: italic;
-    line-height: 21px;
+    font-size: 1.3rem;
+    line-height: 1.6em;
 }
 
 [type="text"]:hover,
@@ -684,7 +685,7 @@ textarea:hover {
     padding: 9px 30px;
     color: #fff;
     font: 700 1.4rem Arial;
-    line-height: 2.4rem;
+    line-height: 1.7em;
     background-color: #fd8300;
     border-radius: 21px;
     border: none;
@@ -753,7 +754,7 @@ hr {
     color: #666;
     font-weight: normal;
     font-size: 1.4rem;
-    line-height: 2.6rem;
+    line-height: 1.86em;
     text-decoration: none;
 }
 
@@ -766,7 +767,7 @@ hr {
     padding: 14px;
     color: #9999a6;
     font-size: 1.3rem;
-    line-height: 1.8rem;
+    line-height: 1.4em;
     text-align: center;
     background-color: #dcdce6;
 }
