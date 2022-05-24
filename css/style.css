@@ -121,7 +121,7 @@ ul {
 .top-menu a {
     color: #b1b1d2;
     font-size: 1.4rem;
-    line-height: 1.7em;
+    line-height: 2.4rem;
     letter-spacing: 2px;
     text-decoration: none;
 }
@@ -193,7 +193,7 @@ header {
     color: #25252c;
     font-weight: bold;
     font-size: 1.6rem;
-    line-height: 1.5em;
+    line-height: 2.4rem;
 }
 
 .phones a {
@@ -283,7 +283,7 @@ a.phone-top:before,
     text-align: center;
     color: #fff;
     font-size: 1.4rem;
-    line-height: 1.7em;
+    line-height: 2.4rem;
     background: url(../img/bg-pic.jpg) center/cover;
 }
 
@@ -322,6 +322,7 @@ sup {
 
 .page1 h1,
 .cottages h2 {
+    padding: 0;
     color: #24242b;
     font: 700 3.0rem "Roboto Slab";
 }
@@ -337,7 +338,7 @@ h1 {
     padding-bottom: 20px;
     color: #666;
     font-size: 1.4rem;
-    line-height: 1.7em;
+    line-height: 2.4rem;
     border-bottom: 1px solid #e4e4ec;
 }
 
@@ -455,7 +456,7 @@ h1 {
 .time,
 .feedback label {
     font-size: 1.3rem;
-    line-height: 1.6em;
+    line-height: 2.1rem;
 }
 
 .cottages h2 {
@@ -471,7 +472,7 @@ h1 {
     color: #1f1f56;
     font-weight: bold;
     font-size: 1.4rem;
-    line-height: 1.7em;
+    line-height: 2.4rem;
     text-decoration: none;
 }
 
@@ -490,7 +491,7 @@ h1 {
 .houses p {
     color: #9999a6;
     font-size: 1.3rem;
-    line-height: 1.4em;
+    line-height: 1.8rem;
 }
 
 .menu {
@@ -535,7 +536,7 @@ h1 {
     padding: 11px 15px;
     color: #25252c;
     font-size: 1.4rem;
-    line-height: 1.7em;
+    line-height: 2.4rem;
     text-decoration: none;
 }
 
@@ -593,7 +594,7 @@ h1 {
     margin-bottom: 5px;
     color: #24242b;
     font: 700 1.4rem "Roboto Slab";
-    line-height: 1.7em;
+    line-height: 2.4rem;
 }
 
 .p3-main-in p {
@@ -604,7 +605,7 @@ h1 {
 .feedback label {
     color: #666;
     font: 400 1.4rem "Arial";
-    line-height: 1.5em;
+    line-height: 2.1rem;
 }
 
 .page3 .phones {
@@ -685,7 +686,7 @@ textarea:hover {
     padding: 9px 30px;
     color: #fff;
     font: 700 1.4rem Arial;
-    line-height: 1.7em;
+    line-height: 2.4rem;
     background-color: #fd8300;
     border-radius: 21px;
     border: none;
@@ -754,7 +755,7 @@ hr {
     color: #666;
     font-weight: normal;
     font-size: 1.4rem;
-    line-height: 1.9em;
+    line-height: 2.6rem;
     text-decoration: none;
 }
 
@@ -767,7 +768,7 @@ hr {
     padding: 14px;
     color: #9999a6;
     font-size: 1.3rem;
-    line-height: 1.4em;
+    line-height: 1.8rem;
     text-align: center;
     background-color: #dcdce6;
 }
