@@ -532,17 +532,16 @@ h1 {
 .menu a {
     position: relative;
     display: block;
-    padding: 11px 15px;
+    padding: 16px 15px;
     color: #25252c;
     font-size: 1.4rem;
-    line-height: 2.4rem;
     text-decoration: none;
 }
 
 .menu>li>a:after {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 21px;
     right: 15px;
     width: 5px;
     height: 5px;
