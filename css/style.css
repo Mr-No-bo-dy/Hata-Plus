@@ -9,10 +9,12 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 html {
     font-size: 9px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,7 +30,6 @@ a:hover,
 
 ul {
     list-style: none;
-    padding: 0;
 }
 
 .wrapper {
@@ -221,12 +222,14 @@ header {
     font-weight: bold;
     font-size: 1.6rem;
     line-height: 1.7em;
+    text-decoration: none;
 }
 
 .phones a {
     font-size: 1.8rem;
 }
 
+.contacts a:hover,
 .phones a:hover,
 .write a:hover {
     text-decoration: underline;
@@ -344,7 +347,7 @@ p.number {
 }
 
 sup {
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 
 .content {
@@ -528,7 +531,7 @@ h1 {
     line-height: 1.4em;
 }
 
-.menu {
+.nav-menu {
     width: 100%;
     position: sticky;
     top: 20px;
@@ -660,12 +663,14 @@ p.account {
 }
 
 .map {
+    overflow: hidden;
     height: 300px;
 }
 
 iframe {
+    margin-top: -67px;
     width: 100%;
-    height: 100%;
+    height: 367px;
     border-width: 0;
 }
 
@@ -875,7 +880,7 @@ hr {
         text-align: left;
     }
 
-    .menu {
+    .nav-menu {
         width: 219px;
     }
 }
