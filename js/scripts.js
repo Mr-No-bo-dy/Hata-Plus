@@ -1,3 +1,4 @@
+// Hamburger
 let hamburger = document.querySelector(".hamburger")
 let top_menu = document.querySelector(".top_menu")
 

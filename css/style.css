@@ -25,7 +25,7 @@ body {
 .hamburger,
 a:hover,
 [type="submit"] {
-    cursor: url(../img/cursor-pointer.cur), auto;
+    cursor: url(../img/cursor-pointer.cur), pointer;
 }
 
 ul {
@@ -110,26 +110,6 @@ ul {
 .hamburger_open span:after {
     top: 0;
     transform: rotate(45deg);
-}
-
-.mini_menu {
-    display: block;
-    position: absolute;
-    top: 53px;
-    left: 0;
-    z-index: 1;
-    color: #fd8300;
-    background-color: #1f1f56;
-    border-radius: 3px;
-}
-
-.top_menu.mini_menu li {
-    text-align: left;
-}
-
-.top_menu.mini_menu a {
-    display: block;
-    padding: 8px 15px;
 }
 
 .page1.flex-between {
@@ -821,6 +801,28 @@ hr {
     line-height: 1.4em;
     text-align: center;
     background-color: #dcdce6;
+}
+
+@media screen and (max-width: 634px) {
+    .mini_menu {
+        display: block;
+        position: absolute;
+        top: 53px;
+        left: 0;
+        z-index: 1;
+        color: #fd8300;
+        background-color: #1f1f56;
+        border-radius: 3px;
+    }
+
+    .top_menu.mini_menu li {
+        text-align: left;
+    }
+
+    .top_menu.mini_menu a {
+        display: block;
+        padding: 8px 15px;
+    }
 }
 
 @media screen and (min-width: 496px) {
